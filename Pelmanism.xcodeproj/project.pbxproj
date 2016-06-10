@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2926E9161D0827B30040349B /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 2926E9151D0827B30040349B /* sample.json */; };
 		29B6D6D71CFC128900CB8ABD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B6D6D61CFC128900CB8ABD /* AppDelegate.swift */; };
 		29B6D6D91CFC128900CB8ABD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B6D6D81CFC128900CB8ABD /* ViewController.swift */; };
 		29B6D6DC1CFC128900CB8ABD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B6D6DA1CFC128900CB8ABD /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2926E9151D0827B30040349B /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
 		29B6D6D31CFC128900CB8ABD /* Pelmanism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pelmanism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B6D6D61CFC128900CB8ABD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29B6D6D81CFC128900CB8ABD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				29B6D6DD1CFC128900CB8ABD /* Assets.xcassets */,
 				29B6D6DF1CFC128900CB8ABD /* LaunchScreen.storyboard */,
 				29B6D6E21CFC128900CB8ABD /* Info.plist */,
+				2926E9151D0827B30040349B /* sample.json */,
 			);
 			path = Pelmanism;
 			sourceTree = "<group>";
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					29B6D6D21CFC128800CB8ABD = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = W7PG7SP597;
 					};
 				};
 			};
@@ -123,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29B6D6E11CFC128900CB8ABD /* LaunchScreen.storyboard in Resources */,
+				2926E9161D0827B30040349B /* sample.json in Resources */,
 				29B6D6DE1CFC128900CB8ABD /* Assets.xcassets in Resources */,
 				29B6D6DC1CFC128900CB8ABD /* Main.storyboard in Resources */,
 			);
@@ -249,10 +254,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Pelmanism/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.shogo.okumura.Pelmanism;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +268,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Pelmanism/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.shogo.okumura.Pelmanism;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +297,7 @@
 				29B6D6E71CFC128900CB8ABD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
